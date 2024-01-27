@@ -25,6 +25,3 @@ Once Agenda is running it will look for `jobTypes` specified in `process.env.JOB
 When any jobs matching the current date are located, whatever functionality is specified in the coresponding job file is executed; in `sendEmails`, reminder emails are created and sent using the Sendgrid API.
 
 Lastly, for every job successfully executed, the corresponding `jobDate` is deleted from the database, and Agenda continues running in the background on the `worker.js` process until the next CRON job is executed.
-
-
-![image](https://github.com/6tring/automated-emails/assets/46660440/409ad8ba-0273-47ec-bbd9-98a13b2b9c7f)
