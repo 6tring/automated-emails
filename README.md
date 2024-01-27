@@ -6,7 +6,7 @@ Based on my experiences as a musician and performer, I created Gigpromoter - a N
 
 Because Gigpromoter is currently in production, the repo is private - but I have created this public repo to share selected files.
 
-One of the features of Gigpromoter is a task-management calendar that begins 8 weeks before scheduled events and helps users manage adminstrative & promotional tasks for each event.
+One of the features of Gigpromoter is a task-management calendar that begins 8 weeks before scheduled events and helps users manage administrative & promotional tasks for each event.
 
 Users have the option of receiving weekly reminder emails that outline associated tasks.
 
