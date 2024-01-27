@@ -12,7 +12,7 @@ Users have the option of receiving weekly reminder emails that outline associate
 
 This functionality is built using AgendaJS to execute jobs scheduled with CRON expressions.
 
-A second worker Node server is required in addition to a primary web server process to run AgendaJS as a background process – which on the Heroku platform can be specified in `Procfile`.
+A second `worker` Node server is required in addition to a primary `web` server process to run AgendaJS as a background process – which on the Heroku platform can be specified in `Procfile`.
 
 Agenda syntax expects `agenda.js` to connect by requiring Agenda in `worker.js` as `require("./agenda.js");`
 
