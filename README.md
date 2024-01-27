@@ -2,7 +2,7 @@
 
 ### Scheduling automated email jobs with AgendaJS
 
-Based on my experiences as a musician and performer, I created Gigpromoter - a Node/Express application that helps new artists and performers learn how to plan, manage, and promote live events. 
+Based on my experiences as a musician and performer, I created Gigpromoter - a Node/Express application that helps new artists learn how to plan, manage, and promote live events. 
 
 Because Gigpromoter is currently in production, the repo is private - but I have created this public repo to share selected files.
 
