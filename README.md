@@ -1,6 +1,6 @@
 # automated-emails
 
-### Scheduling automated email jobs with AgendaJS
+### Scheduling automated email jobs for the Gigpromoter app with AgendaJS
 
 Based on my experiences as a musician and performer, I created Gigpromoter - a Node/Express application that helps new artists learn how to plan, manage, and promote live events. 
 
