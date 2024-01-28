@@ -14,7 +14,7 @@ This functionality is built using AgendaJS to execute jobs scheduled with CRON e
 
 A second `worker` Node server is required in addition to a primary `web` server process to run AgendaJS as a background process – which on the Heroku platform can be specified in `Procfile`.
 
-Agenda syntax expects `agenda.js` to connect by requiring Agenda in `worker.js` as `require("./agenda.js");`
+Agenda syntax convention expects `agenda.js` to connect by requiring Agenda in `worker.js` as `require("./agenda.js");`
 
 Once Agenda is running it will look for `jobTypes` specified in `process.env.JOB_TYPES` [i.e. `emails`] then require and invoke the `jobs` module – which is where any corresponding job functionality is established  – while passing in the `agenda` object.
 
