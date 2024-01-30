@@ -12,6 +12,8 @@ Users have the option of receiving weekly reminder emails that outline associate
 
 This functionality is built using AgendaJS to execute jobs scheduled with CRON expressions.
 
+When a user creates a new event, `jobDate`s are that are based on the event date are created and saved to the database - in this case MongoDB - with any other user data. 
+
 A second `worker` Node server is required in addition to a primary `web` server process to run AgendaJS as a background process – which on the Heroku platform can be specified in `Procfile`.
 
 Agenda syntax convention expects `agenda.js` to connect by requiring Agenda in `worker.js` as `require("./agenda.js");`
@@ -20,7 +22,7 @@ Once Agenda is running it will look for `jobTypes` specified in `process.env.JOB
 
 `agenda.every()` then executes the designated job at intervals specified using CRON – which here is set to run `sendEmails` every day at 9 AM.
 
-`sendEmails` queries documents stored in the associated database for any jobs that match the current date.
+`sendEmails` queries documents stored in the associated database for any `jobDate`s that match the current date.
 
 When any jobs matching the current date are located, whatever functionality is specified in the coresponding job file is executed; in `sendEmails`, reminder emails are created and sent using the Sendgrid API.
 
