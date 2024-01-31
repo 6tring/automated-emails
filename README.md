@@ -12,7 +12,7 @@ Users have the option of receiving weekly reminder emails that outline associate
 
 This functionality is built using AgendaJS to execute jobs scheduled with CRON expressions.
 
-When a user creates a new event, `jobDate`s are that are based on the event date are created and saved to the database - in this case MongoDB - with any other user data. 
+When a user creates a new event, `jobDate`s that are based on the event date are created and saved to the database - in this case MongoDB - with any other user data. 
 
 A second `worker` Node server is required in addition to a primary `web` server process to run AgendaJS as a background process – which on the Heroku platform can be specified in `Procfile`.
 
